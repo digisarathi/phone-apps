@@ -1,0 +1,43 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+body, p
+{
+	/*font-family: "Roboto", Helvetica, Arial, sans-serif;
+	*/font-family: "Monda", Helvetica, Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5 
+{
+	font-family: "Rancho", Helvetica, Arial, sans-serif;
+	color: #333333;
+}
+
+a { color: #333; 
+}
+
+.button { width: auto; background: #333;border: 1px solid #333;
+}
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
