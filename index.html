@@ -126,7 +126,12 @@
   
 	<div id="contact" class="six columns">
 		 <h3>Get in Touch!</h3>
-			      <p>If your organization is seeking its first steps in adopting IT and are contemplating huge cost, talk to us! Drop us an email on <a href="mailto:hello@digisarathi.com">hello@digisarathi.com</a> or even better, call us on (+91) 9920252693.</p>
+         <p>If your organization is seeking its first steps in adopting IT and are contemplating huge cost, talk to us! 
+         <form action="">
+             <input type="radio" name="bizmodel" value="Corporate">Corporate<br>
+             <input type="radio" name="bizmodel" value="Non-profit">Non-profit<br>
+         </form>
+         Drop us an email on <button id="sendemail" class="button">Send Email</button> or even better, call us on (+91) 9920252693.</p>
 					<p>You can also reach on social networks:</p>
 				
 				      <a href="https://www.facebook.com/DigiSarathi" target="_blank"><i class="foundicon-facebook"></i></a>
@@ -162,44 +167,7 @@
   <!-- End Footer -->
 
    
-  
-  
-  <!-- Included JS Files (Uncompressed) -->
-  <!--
-  
-  <script src="javascripts/jquery.js"></script>
-  
-  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
-  
-  <script src="javascripts/jquery.foundation.forms.js"></script>
-  
-  <script src="javascripts/jquery.foundation.reveal.js"></script>
-  
-  <script src="javascripts/jquery.foundation.orbit.js"></script>
-  
-  <script src="javascripts/jquery.foundation.navigation.js"></script>
-  
-  <script src="javascripts/jquery.foundation.buttons.js"></script>
-  
-  <script src="javascripts/jquery.foundation.tabs.js"></script>
-  
-  <script src="javascripts/jquery.foundation.tooltips.js"></script>
-  
-  <script src="javascripts/jquery.foundation.accordion.js"></script>
-  
-  <script src="javascripts/jquery.placeholder.js"></script>
-  
-  <script src="javascripts/jquery.foundation.alerts.js"></script>
-  
-  <script src="javascripts/jquery.foundation.topbar.js"></script>
-  
-  <script src="javascripts/jquery.foundation.joyride.js"></script>
-  
-  <script src="javascripts/jquery.foundation.clearing.js"></script>
-  
-  <script src="javascripts/jquery.foundation.magellan.js"></script>
-  
-  -->
+ 
   
   <!-- Included JS Files (Compressed) -->
   <script src="javascripts/jquery.js"></script>
@@ -209,6 +177,16 @@
   <!-- Initialize JS Plugins -->
   <script src="javascripts/app.js"></script>
   
+	<script type="text/javascript">
+        $('#sendemail').click(function(){
+            $(location).attr('href', 'mailto:hello@digisarathi.com?subject='
+                             + encodeURIComponent("This is my subject")
+                             + "&body=" 
+                             + encodeURIComponent("I'm interested in the machine with ") + $("input[type='radio'][name='bizmodel']:checked").val()
+        );
+    });
+        
+	</script>
 	<script type="text/javascript">
 	 $(window).load(function() {
 		 $('#slider').orbit();
